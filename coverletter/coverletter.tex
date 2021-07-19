@@ -1,0 +1,85 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage[french]{babel}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\fontdir[fonts/]
+\colorlet{awesome}{awesome-skyblue}
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{./examples/profile}
+\name{Quentin}{Brateau}
+\position{Ingénieur Robotique{\enskip\cdotp\enskip}Systèmes embarqués}
+\address{17 rue Adolphe Laberte 51100 Reims}
+
+\mobile{(+33) (0)6 04 18 24 28)}
+\email{quentin.brateau@ensta-bretagne.org}
+\homepage{teusner.github.io/portfolio}
+\github{Teusner}
+\linkedin{quentinbrateau}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{medium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+% The company being applied to
+\recipient
+  {\textsc{ICube \& GIPSA-Lab}}
+  {\textsc{ICube}, Strasbourg, France \\ \textsc{GIPSA-Lab}, Grenoble, France}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Candidature de Thèse : Navigation évenementielle d'un drone en environnement sombre}
+% How the letter is opened
+\letteropening{M. Nicolas \textsc{Marchand}, M. Sylvain \textsc{Durand},}
+% How the letter is closed
+\letterclosing{Veuillez agréer, Messieurs, l'assurance de ma considération distinguée,}
+% Any enclosures with the letter
+\letterenclosure[Pièces Jointes]{
+	\begin{itemize}
+		\item Curriculum Vitae
+		\item Lettre de recommandation du professeur Luc \textsc{Jaulin}
+		\item Lettre de recommandation d'Alaa \textsc{El Jawad} tuteur de mon projet de fin d'études
+		\item Relevés de notes obtenus à l'\textsc{ENSTA} Bretagne
+	\end{itemize}~}
+
+\begin{document}
+
+	% Give optional argument to change alignment(C: center, L: left, R: right)
+	\makecvheader[C]
+
+	\makecvfooter{\today}{Quentin Brateau~~~·~~~Lettre de Motivation}{}
+
+	\makelettertitle
+
+	\begin{cvletter}
+
+		\lettersection{A~propos de moi}
+		Je suis Quentin \textsc{Brateau}, élève ingénieur à l'\textsc{ENSTA} Bretagne, Ecole Nationale Supérieure de Techniques Avancées de Bretagne, basée à Brest. Je serai diplomé en septembre ingénieur en Robotique Mobile. Je suis actuellement en contrat de professionnalisation avec l'entreprise \textsc{Forssea Robotics} pour cette dernière année de formation. Cette expérience professionnelle m'a permis de découvrir la robotique industrielle dans une start-up, et de maitriser \textsc{ROS} et \textsc{Gazebo} afin de réaliser un simulateur pour leur \textsc{ROV}s.
+
+		\lettersection{Pourquoi Moi ?}
+		Etant futur ingénieur roboticien, spécialisé dans la robotique mobile, ce sujet de thèse s'inscrit parfaitement dans la continuité de ma formation. De plus, j'ai eu l'opportunité de faire parti de l'équipe de l'eurathlon 2019-2020 de l'\textsc{ENSTA} Bretagne, concours dans lequel des drones aériens et des drones terrestres collaborent pour cartographier un milieu endommagé. Cette année, j'ai aussi pu diriger un projet industriel soutenu par \textsc{Forssea Robotics} dans lequel un drone devait attérir de manière autonome sur un robot terrestre en mouvement. Je suis donc très familier avec le fonctionnement et le contrôle classique des drones.
+
+		\lettersection{}
+		Finissant mon contrat de professionnalisation fin septembre, je serais disponible pour commencer cette thèse début octobre 2021.
+
+	\end{cvletter}
+
+	\makeletterclosing
+
+\end{document}
