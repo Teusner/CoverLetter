@@ -72,7 +72,7 @@
 
 	\begin{cvletter}
 
-		I am Quentin Brateau, a French engineer in robotics. I was graduated in 2021 ENSTA Bretagne, in Brest, a prominent French graduate, post-graduate school, Research Institute, and doctoral college, which trains engineers in various fields of engineering such as Robotics, which is my specialty. I also was graduated the same year with a master of science in dynamical systems and signals from the University of Angers in France.
+		I am Quentin Brateau, a French engineer in robotics. I was graduated in 2021 ENSTA Bretagne, in Brest, a prominent French graduate, post-graduate school, Research Institute, and doctoral college, which trains engineers in various fields of engineering such as Robotics, which is my specialty. I also was graduated the same year with a Master of Science in dynamical systems and signals from the University of Angers in France.
 
 		My academic training has a strong emphasis on Science because I have completed a two-year intensive post-secondary school preparation for the competitive entrance examination for the French Graduate Engineering Schools. During my internships, I had the opportunity to discover various fields of mobile robotics such as agriculture robotics with Tecnoma, vineyard robotics with Exxact Robotics, and underwater robotics with Forssea Robotics. I am then very familiar with the industrial application of robotics.
 
@@ -82,7 +82,7 @@
 
 		\lettersection{Introduction}
 		
-			I would consider pursuing my studies by doing a Ph.D. at Tampere University mechatronics research group to be a privilege. I have already met Pr. Kari Koskinen and Dr. Jussi Aaltonen, and I had the opportunity to visit the laboratory and present some of my works. From what I was able to discover during my visit, my profile and my skills are perfectly suited to the expectations of the mechatronics research group, with projects that were presented to me such as PVTO, RoboMiners or the AutoFeeder project, which this thesis will be part of.
+			I would consider to be a privilege pursuing my studies by doing a Ph.D. at Tampere University mechatronics research group. I have already met Pr. Kari Koskinen and Dr. Jussi Aaltonen, and I had the opportunity to visit the laboratory and present some of my works. From what I was able to discover during my visit, my profile and my skills are perfectly suited to the expectations of the mechatronics research group, with projects that were presented to me such as PVTO, RoboMiners or the AutoFeeder project, which this thesis will be part of.
 
 			Pr. Luc Jaulin, teacher and researcher at ENSTA Bretagne, also wishes to follow my thesis work in order to bring his expertise in the control of mobile robots, especially in the application of set methods. 
 			
@@ -97,12 +97,24 @@
 			\end{itemize}
 
 		\lettersection{Research Methods}
+
+			Autonomous surface vessels control is a field that seems very promising and still needs a lot of work to guarantee the security of the systems. In particular, this area has shortcomings in the control of ships in a dynamic world. This goes from high-level trajectory planning to last-second avoidance of moving obstacles. To ensure that vessels do not collide with each other or with moving objects, guaranteed tools must be used. In particular, we have to get rid of probabilistic methods which provide the most probable state of the system and use set methods which provide us the set of possible states for the system. 
+
+			After having developed a twin model of the system as close as possible to the real surface vessel, we will be able on the one hand to build controllers and observers of the system based on this model, but also to simulate the behavior of the system and thus to test the theoretical tools before their implementation on the real autonomous surface vessel. We could also get from this simulator a higher-level dynamic behavior prediction to know in advance the robustness and performance of the system.
+			
+			In the context of large autonomous surface vessels control, this is even more important since it is necessary to be sure before launching a mission autonomously that the algorithms are working properly. Software such as Ignition Gazebo or Vortex Studio are very powerful and offer the possibility to simulate the behavior of robots in dynamic and complex environments.
+			
+			Both of them are also compatible with the ROS2 simulation framework. This middleware provides the foundations of the software architecture that could be used in this thesis. Indeed, in addition to the ease of development, ROS2 also allows to interchange the simulator with the drivers allowing to communicate with the real robot, and thus it facilitates the passage from prototyping to testing by launching the same code in these two phases.
+			
+			Then, in a context of guarantee and safety of operation of autonomous surface vessels, it seems necessary to carry out resilient control. Indeed, the boat must be able on the one hand to continue its mission despite the loss of a sensor or an actuator. This can be temporary, as with the loss of the GNSS signal, or permanent with the loss of communication with a sensor or the shutdown of an actuator for example. On the other hand, the boat must be able to judge if it no longer has enough information from sensors or not enough control on actuators to continue its mission without any collisions in a guaranteed way.
+		 
+			Finally, after having set up all the software architecture and having been able to simulate the behavior of the various algorithms implemented, it seems imperative to perform trials on real boats to validate the various tools and methods that have been set up during this Ph.D.
 		
 		\lettersection{Preliminary Schedule}
 
 			After a state of the art review in the field of guaranteed and resilient control of systems, as well as in the classical control of surface vessels, I will alternate between phases of modeling and simulation and phases of real tests to validate the theoretical tools implemented. The results of this theoretical work on the control of systems and their application to the control of autonomous surface vessels through trial results will be subject to publications.
 			
-			As requested by the Ph.D. offer, at least four publications will be scheduled. The guaranteed control algorithms as well as those in degraded situations could be published in an international journal such as Oceanic Engineering or IEEE Transaction on Robotics. Two international conferences in robotics are also targeted \textsc{ICRA} and \textsc{IROS} for example.
+			As requested by the Ph.D. offer, at least four publications will be scheduled. The guaranteed control algorithms as well as those in degraded situations could be published in an international journal such as Oceanic Engineering or IEEE Transaction on Robotics. Two international conferences in robotics are also targeted, for instance \textsc{ICRA} and \textsc{IROS}.
 
 			Finally, the last year will be mainly devoted to the compilation of the results, the formalization of the implemented tools and the writing of my thesis as well as the preparation of my thesis defense.
 
@@ -139,29 +151,9 @@
 				\end{ganttchart}
 			}
 
-		\lettersection{Conclusion}
-
 		\makeletterclosing
 
+		% References avec footnote + References de contacts
+
 	\end{cvletter}
-
-	% 
-
-	% 	\lettersection{A~propos de moi}
-	% 	Je suis Quentin \textsc{Brateau}, élève ingénieur à l'\textsc{ENSTA} Bretagne, Ecole Nationale Supérieure de Techniques Avancées de Bretagne, basée à Brest. Je serai diplomé en septembre ingénieur en Robotique Mobile. Je suis actuellement en contrat de professionnalisation avec l'entreprise \textsc{Forssea Robotics} pour cette dernière année de formation. Cette expérience professionnelle m'a permis de découvrir la robotique industrielle dans une start-up, et de maitriser \textsc{ROS} et \textsc{Gazebo} afin de réaliser un simulateur pour leur \textsc{ROV}s.
-
-	% 	\lettersection{Pourquoi Moi ?}
-	% 	Etant futur ingénieur roboticien, spécialisé dans la robotique mobile, ce sujet de thèse s'inscrit parfaitement dans la continuité de ma formation. De plus, j'ai eu l'opportunité de faire parti de l'équipe de l'eurathlon 2019-2020 de l'\textsc{ENSTA} Bretagne, concours dans lequel des drones aériens et des drones terrestres collaborent pour cartographier un milieu endommagé. Cette année, j'ai aussi pu diriger un projet industriel soutenu par \textsc{Forssea Robotics} dans lequel un drone devait attérir de manière autonome sur un robot terrestre en mouvement. Je suis donc très familier avec le fonctionnement et le contrôle classique des drones.
-
-	% 	\lettersection{}
-	% 	Finissant mon contrat de professionnalisation fin septembre, je serais disponible pour commencer cette thèse début octobre 2021.
-
-		
-
-	% 
-
-	
-
-	
-
 \end{document}
