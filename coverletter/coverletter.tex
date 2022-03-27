@@ -6,6 +6,7 @@
 \usepackage{pgfgantt}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{enumitem}
 
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 \fontdir[fonts/]
@@ -83,15 +84,23 @@
 
 		\lettersection{Problem Statement}
 
-			\begin{itemize}
+			This thesis will allow to remove scientific locks in the fields of control and command of systems in a safe and guaranteed way.
+
+			\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+				\item How the guarantee provided by interval analysis can help us to realize a safe command-control loop?
 				\item How to ensure collision-free control of a system in a dynamic environment?
 				\item How can we ensure the security and resilient control of a system that operates in degraded mode?
-				\item 
 			\end{itemize}
 
 		\lettersection{Research Methods}
 		
 		\lettersection{Preliminary Schedule}
+
+			After a state of the art review in the field of guaranteed and resilient control of systems, as well as in the classical control of vessels, I will alternate between phases of modeling and simulation and phases of real tests to validate the theoretical tools implemented. The results of this theoretical work on the control of systems and their application to the control of vessels through trial results will be subject to publications.
+			
+			As requested by the Ph.D. offer, at least four publications will be scheduled. The guaranteed control algorithms as well as those in degraded situations could be published in an international journal such as Oceanic Engineering or IEEE Transaction on Robotics. Two international conferences in robotics are also targeted \textsc{ICRA} and \textsc{IROS} for example.
+
+			Finally, the last year will be mainly devoted to the compilation of the results, the formalization of the implemented tools and the writing of my thesis as well as the preparation of my thesis defense.
 
 			\resizebox*{\textwidth}{!}{
 				\begin{ganttchart}[
