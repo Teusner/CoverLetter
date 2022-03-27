@@ -1,0 +1,154 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage{pgfgantt}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\fontdir[fonts/]
+\colorlet{awesome}{awesome-skyblue}
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{./examples/profile}
+\name{Quentin}{Brateau}
+\position{Robotics Engineer{\enskip\cdotp\enskip}Embedded Systems}
+\address{17 rue Adolphe Laberte 51100 Reims}
+
+\mobile{(+33) (0)6 04 18 24 28)}
+\email{quentin.brateau@ensta-bretagne.org}
+\homepage{teusner.github.io/portfolio}
+\github{Teusner}
+\linkedin{quentinbrateau}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{medium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+% The company being applied to
+\recipient
+  {\textsc{Tampere University}}
+  {Kalevantie 4, 33100 Tampere}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Ph.D. Letter of Intent : Safe and resilient control of autonomous vessels in dynamic environments}
+% How the letter is opened
+\letteropening{Dear Madam/Sir,}
+% How the letter is closed
+\letterclosing{Veuillez agréer, Messieurs, l'assurance de ma considération distinguée,}
+% Any enclosures with the letter
+% \letterenclosure[Pièces Jointes]{
+% 	\begin{itemize}
+% 		\item Curriculum Vitae
+% 		\item Lettre de recommandation du professeur Luc \textsc{Jaulin}
+% 		\item Lettre de recommandation d'Alaa \textsc{El Jawad} tuteur de mon projet de fin d'études
+% 		\item Relevés de notes obtenus à l'\textsc{ENSTA} Bretagne
+% 	\end{itemize}~}
+
+\begin{document}
+
+	% Give optional argument to change alignment(C: center, L: left, R: right)
+	\makecvheader[C]
+
+	\makecvfooter{\today}{Quentin Brateau~~~·~~~Letter of Intent}{}
+
+	\makelettertitle
+
+	\begin{cvletter}
+
+		I am Quentin Brateau, a French engineer in robotics. I was graduated in 2021 ENSTA Bretagne, in Brest, a prominent French graduate, post-graduate school, Research Institute, and doctoral college, which trains engineers in various fields of engineering such as Robotics, which is my specialty. I also was graduated the same year with a master of science in dynamical systems and signals from the University of Angers in France.
+
+		My academic training has a strong emphasis on Science because I have completed a two-year intensive post-secondary school preparation for the competitive entrance examination for the French Graduate Engineering Schools. During my internships, I had the opportunity to discover various fields of mobile robotics such as agriculture robotics with Tecnoma, vineyard robotics with Exxact Robotics, and underwater robotics with Forssea Robotics. I am then very familiar with the industrial application of robotics.
+
+		During my studies, I learned the basics of robotics such as robot mechanical conception, hardware design, simulation, and low-level control. I was also able to build a solid foundation in information technology through courses on applied mathematics, image and signal processing, machine learning, embedded operating systems. Additionally, I was able to reinforce my knowledge in robotics by learning control theory, probabilistic and set methods for state estimation, navigation, and path planning.
+
+		Thanks for your time and consideration. I genuinely believe that my experience and education would make me a valuable asset to the mechatronics research group. I believe my skills and motivation make me a great potential asset. I can be reached by phone and email if you need any further information.
+
+		\lettersection{Introduction}
+
+		\lettersection{Problem Statement}
+
+			\begin{itemize}
+				\item How to ensure collision-free control of a system in a dynamic environment?
+				\item How can we ensure the security and resilient control of a system that operates in degraded mode?
+				\item 
+			\end{itemize}
+
+		\lettersection{Research Methods}
+		
+		\lettersection{Preliminary Schedule}
+
+			\resizebox*{\textwidth}{!}{
+				\begin{ganttchart}[
+						y unit title=0.5cm, y unit chart=0.7cm, vgrid,hgrid,
+						title height=1, title label font=\bfseries\footnotesize,
+						bar/.style={fill=awesome-skyblue}, bar height=0.7, inline]{1}{48}
+
+					\gantttitle{Preliminary Schedule}{48}\\
+					\gantttitle[]{2022}{6} \gantttitle[]{2023}{12} \gantttitle[]{2024}{12} \gantttitle[]{2025}{12} \gantttitle[]{2026}{6} \\
+					\gantttitle{Q3}{3} \gantttitle{Q4}{3}
+					\gantttitle{Q1}{3} \gantttitle{Q2}{3} \gantttitle{Q3}{3}  \gantttitle{Q4}{3}
+					\gantttitle{Q1}{3} \gantttitle{Q2}{3} \gantttitle{Q3}{3} \gantttitle{Q4}{3}
+					\gantttitle{Q1}{3} \gantttitle{Q2}{3} \gantttitle{Q3}{3} \gantttitle{Q4}{3}
+					\gantttitle{Q1}{3} \gantttitle{Q2}{3} \\
+
+					\ganttbar[inline=false]{State of the Art}{1}{6}
+					\ganttbar[inline=false]{}{16}{18}
+					\ganttbar[inline=false]{}{28}{30} \\
+
+					\ganttbar[inline=false]{Modelling and Simulation}{4}{12}
+					\ganttbar[inline=false]{}{16}{21}
+					\ganttbar[inline=false]{}{28}{33} \\
+
+					\ganttbar[inline=false]{Laboratory and Field Experiments}{10}{15}
+					\ganttbar[inline=false]{}{22}{27}
+					\ganttbar[inline=false]{}{34}{39} \\
+
+					\ganttbar[inline=false]{Article and Thesis}{10}{12}
+					\ganttbar[inline=false]{}{22}{24}
+					\ganttbar[inline=false]{}{34}{36}
+					\ganttbar[inline=false]{}{40}{48}
+				\end{ganttchart}
+			}
+
+		\lettersection{Conclusion}
+
+		\makeletterclosing
+
+	\end{cvletter}
+
+	% 
+
+	% 	\lettersection{A~propos de moi}
+	% 	Je suis Quentin \textsc{Brateau}, élève ingénieur à l'\textsc{ENSTA} Bretagne, Ecole Nationale Supérieure de Techniques Avancées de Bretagne, basée à Brest. Je serai diplomé en septembre ingénieur en Robotique Mobile. Je suis actuellement en contrat de professionnalisation avec l'entreprise \textsc{Forssea Robotics} pour cette dernière année de formation. Cette expérience professionnelle m'a permis de découvrir la robotique industrielle dans une start-up, et de maitriser \textsc{ROS} et \textsc{Gazebo} afin de réaliser un simulateur pour leur \textsc{ROV}s.
+
+	% 	\lettersection{Pourquoi Moi ?}
+	% 	Etant futur ingénieur roboticien, spécialisé dans la robotique mobile, ce sujet de thèse s'inscrit parfaitement dans la continuité de ma formation. De plus, j'ai eu l'opportunité de faire parti de l'équipe de l'eurathlon 2019-2020 de l'\textsc{ENSTA} Bretagne, concours dans lequel des drones aériens et des drones terrestres collaborent pour cartographier un milieu endommagé. Cette année, j'ai aussi pu diriger un projet industriel soutenu par \textsc{Forssea Robotics} dans lequel un drone devait attérir de manière autonome sur un robot terrestre en mouvement. Je suis donc très familier avec le fonctionnement et le contrôle classique des drones.
+
+	% 	\lettersection{}
+	% 	Finissant mon contrat de professionnalisation fin septembre, je serais disponible pour commencer cette thèse début octobre 2021.
+
+		
+
+	% 
+
+	
+
+	
+
+\end{document}
