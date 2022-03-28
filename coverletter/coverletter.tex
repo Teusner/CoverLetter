@@ -74,6 +74,8 @@
 
 		I am Quentin Brateau, a French engineer in robotics. I was graduated in 2021 ENSTA Bretagne, in Brest, a prominent French graduate, post-graduate school, Research Institute, and doctoral college, which trains engineers in various fields of engineering such as Robotics, which is my specialty. I also was graduated the same year with a Master of Science in dynamical systems and signals from the University of Angers in France.
 
+		I would like to apply for one of the 4 fully-funded Ph.D. you are offering in your Doctoral Program in Engineering Sciences. I am particularly interested in working with the mechatronics research team. This offer seems particularly attractive to me because it has a strong industrial focus and allows for concrete applications of the research conducted.
+
 		My academic training has a strong emphasis on Science because I have completed a two-year intensive post-secondary school preparation for the competitive entrance examination for the French Graduate Engineering Schools. During my internships, I had the opportunity to discover various fields of mobile robotics such as agriculture robotics with Tecnoma, vineyard robotics with Exxact Robotics, and underwater robotics with Forssea Robotics. I am then very familiar with the industrial application of robotics.
 
 		During my studies, I learned the basics of robotics such as robot mechanical conception, hardware design, simulation, and low-level control. I was also able to build a solid foundation in information technology through courses on applied mathematics, image and signal processing, machine learning, embedded operating systems. Additionally, I was able to reinforce my knowledge in robotics by learning control theory, probabilistic and set methods for state estimation, navigation, and path planning.
@@ -84,9 +86,11 @@
 		
 			I would consider to be a privilege pursuing my studies by doing a Ph.D. at Tampere University mechatronics research group. I have already met Pr. Kari Koskinen and Dr. Jussi Aaltonen, and I had the opportunity to visit the laboratory and present some of my works. From what I was able to discover during my visit, my profile and my skills are perfectly suited to the expectations of the mechatronics research group, with projects that were presented to me such as PVTO, RoboMiners or the AutoFeeder project, which this thesis will be part of.
 
-			Pr. Luc Jaulin, teacher and researcher at ENSTA Bretagne, also wishes to follow my thesis work in order to bring his expertise in the control of mobile robots, especially in the application of set methods. 
+			Pr. Luc Jaulin~\footnote{\url{https://www.ensta-bretagne.fr/jaulin}}, teacher and researcher at ENSTA Bretagne, also wishes to follow my thesis work in order to bring his expertise in the control of mobile robots, especially in the application of set methods. 
 			
 		\lettersection{Problem Statement}
+
+			The uncertainties related to the maritime environment are many and come from different factors such as capricious weather, unknown currents the risk of collision with offshore infrastructures or other surface vessels, the possibility of a breakdown with the impossibility to repair on site due to the absence of operators, and many other reasons that make it difficult to explore this marine environment.
 
 			The control of systems in a guaranteed and resilient way still has many shortcomings. This thesis will allow to remove scientific locks in the fields of control and command of systems in a safe and guaranteed way.
 
@@ -98,9 +102,9 @@
 
 		\lettersection{Research Methods}
 
-			Autonomous surface vessels control is a field that seems very promising and still needs a lot of work to guarantee the security of the systems. In particular, this area has shortcomings in the control of ships in a dynamic world. This goes from high-level trajectory planning to last-second avoidance of moving obstacles. To ensure that vessels do not collide with each other or with moving objects, guaranteed tools must be used. In particular, we have to get rid of probabilistic methods which provide the most probable state of the system and use set methods which provide us the set of possible states for the system. 
+			Autonomous surface vessels control is a field that seems very promising and still needs a lot of work to guarantee the security of the systems. In particular, this area has shortcomings in the control of ships in a dynamic world. This goes from high-level trajectory planning to last-second avoidance of moving obstacles. To ensure that vessels do not collide with each other or with moving objects, guaranteed tools must be used. In particular, we have to get rid of probabilistic methods which provide the most probable state of the system and use set methods~\footnote{Applied Interval Analysis: With Examples in Parameter and State Estimation, Robust Control and Robotics, Jaulin, L. and Kieffer, M. and Didrit, O. and Walter, E., 2012} which provide us the set of possible states for the system. 
 
-			After having developed a twin model of the system as close as possible to the real surface vessel, we will be able on the one hand to build controllers and observers of the system based on this model, but also to simulate the behavior of the system and thus to test the theoretical tools before their implementation on the real autonomous surface vessel. We could also get from this simulator a higher-level dynamic behavior prediction to know in advance the robustness and performance of the system.
+			The state equations for marine and underwater vehicles are well known~\footnote{Handbook of Marine Craft Hydrodynamics and Motion Control, Fossen, T.I., 2021}. After having developed a twin model of the system as close as possible to the real surface vessel, we will be able on the one hand to build controllers and observers of the system based on this model, but also to simulate the behavior of the system and thus to test the theoretical tools before their implementation on the real autonomous surface vessel. We could also get from this simulator a higher-level dynamic behavior prediction to know in advance the robustness and performance of the system.
 			
 			In the context of large autonomous surface vessels control, this is even more important since it is necessary to be sure before launching a mission autonomously that the algorithms are working properly. Software such as Ignition Gazebo or Vortex Studio are very powerful and offer the possibility to simulate the behavior of robots in dynamic and complex environments.
 			
@@ -150,6 +154,12 @@
 					\ganttbar[inline=false]{}{40}{48}
 				\end{ganttchart}
 			}
+
+		\lettersection{List of Publications}
+
+			\begin{itemize}
+				\item Acoustic source localisation in underwater environment using interval analysis, Quentin Brateau, Benoit Zerr, Luc Jaulin, Proceedings of ICUA 2022 (Submitted)
+			\end{itemize}
 
 		\makeletterclosing
 
