@@ -1,0 +1,75 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage[french]{babel}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\fontdir[fonts/]
+\colorlet{awesome}{awesome-skyblue}
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{./examples/profile}
+\name{Quentin}{Brateau}
+\position{Ingénieur Robotique{\enskip\cdotp\enskip}Systèmes embarqués}
+\address{17 rue Adolphe Laberte 51100 Reims}
+
+\mobile{(+33) (0)6 04 18 24 28)}
+\email{quentin.brateau@ensta-bretagne.org}
+\homepage{teusner.github.io/portfolio}
+\github{Teusner}
+\linkedin{quentinbrateau}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{medium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+% The company being applied to
+\recipient
+  {Thèse AID - 2022850}
+  {Cartographie et localisation simultanées avec données aberrantes à l'aide du calcul par intervalles}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Candidature de thèse en robotique sous-marine}
+% How the letter is opened
+\letteropening{Madame, Monsieur,}
+% How the letter is closed
+\letterclosing{Veuillez agréer, Madame, Monsieur, l'assurance de ma considération distinguée,}
+% Any enclosures with the letter
+
+\begin{document}
+
+	% Give optional argument to change alignment(C: center, L: left, R: right)
+	\makecvheader[C]
+
+	\makecvfooter{\today}{Quentin Brateau~~~·~~~Lettre de Motivation}{}
+
+	\makelettertitle
+
+	\begin{cvletter}
+
+		Je suis Quentin \textsc{Brateau}, ingénieur en robotique diplômé de l'\textsc{ENSTA} Bretagne en 2021, Ecole Nationale Supérieure de Techniques Avancées de Bretagne, basée à Brest. J'ai obtenu la même année le diplôme du Master Recherche de l'Université d'Angers dans la spécialité Système Dynamiques et Signaux afin de poursuivre mes études en thèse.
+		
+		Après ma dernière année d'école d'ingénieur effectuée en alternance chez \textit{Forssea Robotics}, j'ai été embauché à l'\textsc{ENSTA} Bretagne en tant qu'ingénieur de recherche dans des sujets très liés à la robotique marine. Ces deux expériences fortes m'ont fait découvrir les spécificités ainsi que comprendre les enjeux stratégiques de la robotique marine et sous-marine. En effet, j'ai pu travailler sur de la simulation de propagation acoustique sous-marine, ce qui a mené à des travaux liés à de la localisation de source acoustiques par des méthodes ensemblistes, ainsi que sur des sujets de navigation garantie et résiliente pour des navires autonomes.
+
+		J'aimerai donc aujourd'hui poursuivre mes études en faisant une thèse en robotique sous-marine. Le sujet proposé conjointement par l'\textsc{AID} et le laboratoire de robotique de l'\textsc{ENSTA} Bretagne m'intéresse particulièrement, car il allie robotique sous-marine et méthodes ensemblistes en un sujet qui me semble attrayant et très prometteur. Cette thèse s'inscrira dans la continuité des travaux déjà menés à l'\textsc{ENSTA} Bretagne, dont j'ai pu prendre connaissance lors de mon passage en tant qu'élève puis en tant qu'ingénieur de recherche au laboratoire de robotique et qui ont su capter mon intérêt.
+
+	\end{cvletter}
+
+	\makeletterclosing
+
+\end{document}
